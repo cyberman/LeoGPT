@@ -1,0 +1,59 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 84C283FA2F9542B4008424DA /* LeoGPT */;
+		activeTarget = 8D1107260486CEB800E47090 /* LeoGPT */;
+		codeSenseManager = 84C283FE2F9542D3008424DA /* Code sense */;
+		executables = (
+			84C283FA2F9542B4008424DA /* LeoGPT */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 798311092;
+			PBXWorkspaceStateSaveDate = 798311092;
+		};
+		sourceControlManager = 84C283FD2F9542D3008424DA /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	84C283FA2F9542B4008424DA /* LeoGPT */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = LeoGPT;
+		sourceDirectories = (
+		);
+	};
+	84C283FD2F9542D3008424DA /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	84C283FE2F9542D3008424DA /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8D1107260486CEB800E47090 /* LeoGPT */ = {
+		activeExec = 0;
+		executables = (
+			84C283FA2F9542B4008424DA /* LeoGPT */,
+		);
+	};
+}
