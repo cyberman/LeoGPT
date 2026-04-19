@@ -1,5 +1,6 @@
 #import "LGMainWindowController.h"
 #import "../Support/LGVersion.h"
+#import <float.h>
 
 @interface LGMainWindowController ()
 - (NSView *)buildContentViewForFrame:(NSRect)frame;
@@ -60,8 +61,8 @@
     sidebarView = [self buildSidebarWithFrame:sidebarFrame];
     mainAreaView = [self buildMainAreaWithFrame:mainAreaFrame];
 
-    [sidebarView setAutoresizingMask:NSHeightSizable];
-    [mainAreaView setAutoresizingMask:NSWidthSizable | NSHeightSizable];
+    [sidebarView setAutoresizingMask:NSViewHeightSizable];
+    [mainAreaView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 
     [rootView addSubview:sidebarView];
     [rootView addSubview:mainAreaView];
@@ -83,7 +84,7 @@
     [scrollView setBorderType:NSBezelBorder];
     [scrollView setHasVerticalScroller:YES];
     [scrollView setHasHorizontalScroller:NO];
-    [scrollView setAutoresizingMask:NSWidthSizable | NSHeightSizable];
+    [scrollView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 
     _conversationOutlineView = [[NSOutlineView alloc] initWithFrame:bounds];
 
@@ -125,10 +126,10 @@
 
     divider = [[[NSBox alloc] initWithFrame:NSMakeRect(0.0, composerHeight, frame.size.width, 1.0)] autorelease];
     [divider setBoxType:NSBoxSeparator];
-    [divider setAutoresizingMask:NSWidthSizable | NSMinYMargin];
+    [divider setAutoresizingMask:NSViewWidthSizable | NSViewMinYMargin];
 
-    [transcriptScrollView setAutoresizingMask:NSWidthSizable | NSHeightSizable];
-    [composerArea setAutoresizingMask:NSWidthSizable | NSMaxYMargin];
+    [transcriptScrollView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
+    [composerArea setAutoresizingMask:NSViewWidthSizable | NSViewMaxYMargin];
 
     [mainAreaContainer addSubview:transcriptScrollView];
     [mainAreaContainer addSubview:divider];
@@ -167,7 +168,7 @@
     [_transcriptView setUsesFindPanel:YES];
     [_transcriptView setHorizontallyResizable:NO];
     [_transcriptView setVerticallyResizable:YES];
-    [_transcriptView setAutoresizingMask:NSWidthSizable];
+    [_transcriptView setAutoresizingMask:NSViewWidthSizable];
     [_transcriptView setFont:[NSFont systemFontOfSize:12.0]];
 
     [_transcriptView setString:@"Assistant\nWelcome to LeoGPT.\n\nThis is the first native Leopard window draft.\n"];
@@ -204,7 +205,7 @@
     [composerScrollView setBorderType:NSBezelBorder];
     [composerScrollView setHasVerticalScroller:YES];
     [composerScrollView setHasHorizontalScroller:NO];
-    [composerScrollView setAutoresizingMask:NSWidthSizable | NSHeightSizable];
+    [composerScrollView setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
 
     _composerView = [[NSTextView alloc] initWithFrame:NSMakeRect(0.0, 0.0,
                                                                  composerTextFrame.size.width,
@@ -229,7 +230,7 @@
     [_modelPopUpButton addItemWithTitle:@"gpt-4.1-mini"];
     [_modelPopUpButton addItemWithTitle:@"gpt-4.1"];
     [_modelPopUpButton addItemWithTitle:@"gpt-4.1-nano"];
-    [_modelPopUpButton setAutoresizingMask:NSMaxXMargin | NSMaxYMargin];
+    [_modelPopUpButton setAutoresizingMask:NSViewMaxXMargin | NSViewMaxYMargin];
     [composerContainer addSubview:_modelPopUpButton];
 
     sendFrame = NSMakeRect(frame.size.width - padding - buttonWidth,
@@ -242,7 +243,7 @@
     [_sendButton setTitle:@"Send"];
     [_sendButton setTarget:self];
     [_sendButton setAction:@selector(sendMessage:)];
-    [_sendButton setAutoresizingMask:NSMinXMargin | NSMaxYMargin];
+    [_sendButton setAutoresizingMask:NSViewMinXMargin | NSViewMaxYMargin];
     [composerContainer addSubview:_sendButton];
 
     return composerContainer;

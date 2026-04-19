@@ -23,6 +23,7 @@
 		84C284332F9557F0008424DA /* LGComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2842E2F9557F0008424DA /* LGComposerViewController.m */; };
 		84C284342F9557F0008424DA /* LGConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284302F9557F0008424DA /* LGConversationListController.m */; };
 		84C284352F9557F0008424DA /* LGTranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284322F9557F0008424DA /* LGTranscriptViewController.m */; };
+		84D2B3FC2F9570B200F91CE6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D2B3FB2F9570B200F91CE6 /* Info.plist */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -70,7 +71,7 @@
 		84C284302F9557F0008424DA /* LGConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGConversationListController.m; path = Sources/UI/LGConversationListController.m; sourceTree = "<group>"; };
 		84C284312F9557F0008424DA /* LGTranscriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGTranscriptViewController.h; path = Sources/UI/LGTranscriptViewController.h; sourceTree = "<group>"; };
 		84C284322F9557F0008424DA /* LGTranscriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGTranscriptViewController.m; path = Sources/UI/LGTranscriptViewController.m; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D2B3FB2F9570B200F91CE6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* LeoGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,7 +145,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8D1107310486CEB800E47090 /* Info.plist */,
+				84D2B3FB2F9570B200F91CE6 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 			);
@@ -285,6 +286,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				84D2B3FC2F9570B200F91CE6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
