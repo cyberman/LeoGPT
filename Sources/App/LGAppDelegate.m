@@ -11,6 +11,12 @@
     [_mainWindowController showWindow:self];
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    (void)sender;
+    return YES;
+}
+
 - (void)dealloc
 {
     [_mainWindowController release];
@@ -18,4 +24,3 @@
 }
 
 @end
-

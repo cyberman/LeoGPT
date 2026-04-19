@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		84C2840C2F95575F008424DA /* LGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284072F95575F008424DA /* LGAppDelegate.m */; };
+		84C2840D2F95575F008424DA /* LGMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284092F95575F008424DA /* LGMainWindowController.m */; };
+		84C2840E2F95575F008424DA /* LGPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2840B2F95575F008424DA /* LGPreferencesWindowController.m */; };
+		84C2841B2F955790008424DA /* LGConversation.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C2840F2F955790008424DA /* LGConversation.c */; };
+		84C2841C2F955790008424DA /* LGError.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C284112F955790008424DA /* LGError.c */; };
+		84C2841D2F955790008424DA /* LGModelCatalog.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C284132F955790008424DA /* LGModelCatalog.c */; };
+		84C2841E2F955790008424DA /* LGService.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C284152F955790008424DA /* LGService.c */; };
+		84C2841F2F955790008424DA /* LGSettings.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C284172F955790008424DA /* LGSettings.c */; };
+		84C284202F955790008424DA /* LGTranscriptStore.c in Sources */ = {isa = PBXBuildFile; fileRef = 84C284192F955790008424DA /* LGTranscriptStore.c */; };
+		84C284272F9557B7008424DA /* LGDefaultsBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284222F9557B7008424DA /* LGDefaultsBridge.m */; };
+		84C284282F9557B7008424DA /* LGKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284242F9557B7008424DA /* LGKeychain.m */; };
+		84C284292F9557B7008424DA /* LGNetworkBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284262F9557B7008424DA /* LGNetworkBridge.m */; };
+		84C284332F9557F0008424DA /* LGComposerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C2842E2F9557F0008424DA /* LGComposerViewController.m */; };
+		84C284342F9557F0008424DA /* LGConversationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284302F9557F0008424DA /* LGConversationListController.m */; };
+		84C284352F9557F0008424DA /* LGTranscriptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C284322F9557F0008424DA /* LGTranscriptViewController.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -22,6 +37,39 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* LeoGPT_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeoGPT_Prefix.pch; sourceTree = "<group>"; };
+		84C284062F95575F008424DA /* LGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGAppDelegate.h; path = Sources/App/LGAppDelegate.h; sourceTree = "<group>"; };
+		84C284072F95575F008424DA /* LGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGAppDelegate.m; path = Sources/App/LGAppDelegate.m; sourceTree = "<group>"; };
+		84C284082F95575F008424DA /* LGMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGMainWindowController.h; path = Sources/App/LGMainWindowController.h; sourceTree = "<group>"; };
+		84C284092F95575F008424DA /* LGMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGMainWindowController.m; path = Sources/App/LGMainWindowController.m; sourceTree = "<group>"; };
+		84C2840A2F95575F008424DA /* LGPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGPreferencesWindowController.h; path = Sources/App/LGPreferencesWindowController.h; sourceTree = "<group>"; };
+		84C2840B2F95575F008424DA /* LGPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGPreferencesWindowController.m; path = Sources/App/LGPreferencesWindowController.m; sourceTree = "<group>"; };
+		84C2840F2F955790008424DA /* LGConversation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LGConversation.c; path = Sources/Core/LGConversation.c; sourceTree = "<group>"; };
+		84C284102F955790008424DA /* LGConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGConversation.h; path = Sources/Core/LGConversation.h; sourceTree = "<group>"; };
+		84C284112F955790008424DA /* LGError.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LGError.c; path = Sources/Core/LGError.c; sourceTree = "<group>"; };
+		84C284122F955790008424DA /* LGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGError.h; path = Sources/Core/LGError.h; sourceTree = "<group>"; };
+		84C284132F955790008424DA /* LGModelCatalog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LGModelCatalog.c; path = Sources/Core/LGModelCatalog.c; sourceTree = "<group>"; };
+		84C284142F955790008424DA /* LGModelCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGModelCatalog.h; path = Sources/Core/LGModelCatalog.h; sourceTree = "<group>"; };
+		84C284152F955790008424DA /* LGService.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LGService.c; path = Sources/Core/LGService.c; sourceTree = "<group>"; };
+		84C284162F955790008424DA /* LGService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGService.h; path = Sources/Core/LGService.h; sourceTree = "<group>"; };
+		84C284172F955790008424DA /* LGSettings.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LGSettings.c; path = Sources/Core/LGSettings.c; sourceTree = "<group>"; };
+		84C284182F955790008424DA /* LGSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGSettings.h; path = Sources/Core/LGSettings.h; sourceTree = "<group>"; };
+		84C284192F955790008424DA /* LGTranscriptStore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = LGTranscriptStore.c; path = Sources/Core/LGTranscriptStore.c; sourceTree = "<group>"; };
+		84C2841A2F955790008424DA /* LGTranscriptStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGTranscriptStore.h; path = Sources/Core/LGTranscriptStore.h; sourceTree = "<group>"; };
+		84C284212F9557B7008424DA /* LGDefaultsBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGDefaultsBridge.h; path = Sources/Platform/LGDefaultsBridge.h; sourceTree = "<group>"; };
+		84C284222F9557B7008424DA /* LGDefaultsBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGDefaultsBridge.m; path = Sources/Platform/LGDefaultsBridge.m; sourceTree = "<group>"; };
+		84C284232F9557B7008424DA /* LGKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGKeychain.h; path = Sources/Platform/LGKeychain.h; sourceTree = "<group>"; };
+		84C284242F9557B7008424DA /* LGKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGKeychain.m; path = Sources/Platform/LGKeychain.m; sourceTree = "<group>"; };
+		84C284252F9557B7008424DA /* LGNetworkBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGNetworkBridge.h; path = Sources/Platform/LGNetworkBridge.h; sourceTree = "<group>"; };
+		84C284262F9557B7008424DA /* LGNetworkBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGNetworkBridge.m; path = Sources/Platform/LGNetworkBridge.m; sourceTree = "<group>"; };
+		84C2842A2F9557D6008424DA /* LGTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGTypes.h; path = Sources/Support/LGTypes.h; sourceTree = "<group>"; };
+		84C2842B2F9557D6008424DA /* LGUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGUtilities.h; path = Sources/Support/LGUtilities.h; sourceTree = "<group>"; };
+		84C2842C2F9557D6008424DA /* LGVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGVersion.h; path = Sources/Support/LGVersion.h; sourceTree = "<group>"; };
+		84C2842D2F9557F0008424DA /* LGComposerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGComposerViewController.h; path = Sources/UI/LGComposerViewController.h; sourceTree = "<group>"; };
+		84C2842E2F9557F0008424DA /* LGComposerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGComposerViewController.m; path = Sources/UI/LGComposerViewController.m; sourceTree = "<group>"; };
+		84C2842F2F9557F0008424DA /* LGConversationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGConversationListController.h; path = Sources/UI/LGConversationListController.h; sourceTree = "<group>"; };
+		84C284302F9557F0008424DA /* LGConversationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGConversationListController.m; path = Sources/UI/LGConversationListController.m; sourceTree = "<group>"; };
+		84C284312F9557F0008424DA /* LGTranscriptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LGTranscriptViewController.h; path = Sources/UI/LGTranscriptViewController.h; sourceTree = "<group>"; };
+		84C284322F9557F0008424DA /* LGTranscriptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LGTranscriptViewController.m; path = Sources/UI/LGTranscriptViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* LeoGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeoGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -74,6 +122,7 @@
 		29B97314FDCFA39411CA2CEA /* LeoGPT */ = {
 			isa = PBXGroup;
 			children = (
+				84C284002F9556C0008424DA /* Sources */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -109,6 +158,86 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C284002F9556C0008424DA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				84C284052F95572D008424DA /* UI */,
+				84C284042F95571D008424DA /* Support */,
+				84C284032F95570A008424DA /* Platform */,
+				84C284022F9556FA008424DA /* Core */,
+				84C284012F9556EC008424DA /* App */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		84C284012F9556EC008424DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				84C284062F95575F008424DA /* LGAppDelegate.h */,
+				84C284072F95575F008424DA /* LGAppDelegate.m */,
+				84C284082F95575F008424DA /* LGMainWindowController.h */,
+				84C284092F95575F008424DA /* LGMainWindowController.m */,
+				84C2840A2F95575F008424DA /* LGPreferencesWindowController.h */,
+				84C2840B2F95575F008424DA /* LGPreferencesWindowController.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		84C284022F9556FA008424DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				84C2840F2F955790008424DA /* LGConversation.c */,
+				84C284102F955790008424DA /* LGConversation.h */,
+				84C284112F955790008424DA /* LGError.c */,
+				84C284122F955790008424DA /* LGError.h */,
+				84C284132F955790008424DA /* LGModelCatalog.c */,
+				84C284142F955790008424DA /* LGModelCatalog.h */,
+				84C284152F955790008424DA /* LGService.c */,
+				84C284162F955790008424DA /* LGService.h */,
+				84C284172F955790008424DA /* LGSettings.c */,
+				84C284182F955790008424DA /* LGSettings.h */,
+				84C284192F955790008424DA /* LGTranscriptStore.c */,
+				84C2841A2F955790008424DA /* LGTranscriptStore.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		84C284032F95570A008424DA /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				84C284212F9557B7008424DA /* LGDefaultsBridge.h */,
+				84C284222F9557B7008424DA /* LGDefaultsBridge.m */,
+				84C284232F9557B7008424DA /* LGKeychain.h */,
+				84C284242F9557B7008424DA /* LGKeychain.m */,
+				84C284252F9557B7008424DA /* LGNetworkBridge.h */,
+				84C284262F9557B7008424DA /* LGNetworkBridge.m */,
+			);
+			name = Platform;
+			sourceTree = "<group>";
+		};
+		84C284042F95571D008424DA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				84C2842A2F9557D6008424DA /* LGTypes.h */,
+				84C2842B2F9557D6008424DA /* LGUtilities.h */,
+				84C2842C2F9557D6008424DA /* LGVersion.h */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		84C284052F95572D008424DA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84C2842D2F9557F0008424DA /* LGComposerViewController.h */,
+				84C2842E2F9557F0008424DA /* LGComposerViewController.m */,
+				84C2842F2F9557F0008424DA /* LGConversationListController.h */,
+				84C284302F9557F0008424DA /* LGConversationListController.m */,
+				84C284312F9557F0008424DA /* LGTranscriptViewController.h */,
+				84C284322F9557F0008424DA /* LGTranscriptViewController.m */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +296,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				84C2840C2F95575F008424DA /* LGAppDelegate.m in Sources */,
+				84C2840D2F95575F008424DA /* LGMainWindowController.m in Sources */,
+				84C2840E2F95575F008424DA /* LGPreferencesWindowController.m in Sources */,
+				84C2841B2F955790008424DA /* LGConversation.c in Sources */,
+				84C2841C2F955790008424DA /* LGError.c in Sources */,
+				84C2841D2F955790008424DA /* LGModelCatalog.c in Sources */,
+				84C2841E2F955790008424DA /* LGService.c in Sources */,
+				84C2841F2F955790008424DA /* LGSettings.c in Sources */,
+				84C284202F955790008424DA /* LGTranscriptStore.c in Sources */,
+				84C284272F9557B7008424DA /* LGDefaultsBridge.m in Sources */,
+				84C284282F9557B7008424DA /* LGKeychain.m in Sources */,
+				84C284292F9557B7008424DA /* LGNetworkBridge.m in Sources */,
+				84C284332F9557F0008424DA /* LGComposerViewController.m in Sources */,
+				84C284342F9557F0008424DA /* LGConversationListController.m in Sources */,
+				84C284352F9557F0008424DA /* LGTranscriptViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
